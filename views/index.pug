@@ -1,11 +1,8 @@
-doctype html
-html(lang="en")
-  head
-    title Flash Cards
-  body
-    header
-        h1 Flash Cards
+extends layout.pug
+block content
     section#content
-        h2 Welcome, Student!
-    footer
-        p An app to help you study.
+    h2 Welcome, Student!
+    ul
+      each color in colors
+        li= color
+    h2= prompt

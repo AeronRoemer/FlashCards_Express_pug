@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    title Flash Cards
+  body
+    header
+      h1 Flash Cards
+    section#content
+      ul
+        each color in colors
+          li= color
+      h2= prompt
+    footer
+      if name
+        p An app to help #{name} study.
+      else 
+        p An app to help you study.

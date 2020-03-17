@@ -1,7 +1,10 @@
 extends layout.pug
 block content
     section#content
-    h2 Welcome, Student!
+    if name
+      h2 Welcome, #{name}!
+    else 
+      h2 Welcome, student!
     ul
       each color in colors
         li= color

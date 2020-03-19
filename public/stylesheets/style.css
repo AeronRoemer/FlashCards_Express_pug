@@ -96,9 +96,10 @@ input {
 }
 
 .namecard-greeting {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 400;
   width: 50%;
+  display: inline;
 }
 
 .namecard-form {
@@ -143,10 +144,12 @@ input {
 .namecard-exit {
   width: 50%;
   text-align: right;
+  display: inline;
 }
 
 .namecard-exit button {
   background-color: #F5F3ED;
+  max-width: 40px;
   border: none;
   margin-top: 2px;
   outline: none;

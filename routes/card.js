@@ -24,7 +24,7 @@ router.get('/:id', (req, res) => {
     const {hint} = cards[id];
     //get name from cookies
     const name = req.cookies.username;
-    const templateData = {id, text, name};
+    const templateData = {id, text, name, side};
     //displays 'Question or answer text. String passed to query string in HTML Doc
     if (side === 'question'){
         templateData.hint = hint;

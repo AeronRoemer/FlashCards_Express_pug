@@ -1,4 +1,13 @@
-extends layout.pug
-block content
-    h1= error.message
-    h2= error.status
+doctype html
+html(lang="en")
+  head
+    link(rel='stylesheet', href='/static/stylesheets/style.css')
+    title Flash Cards
+  body
+    include includes/header.pug
+    
+    div.error
+      h1= `${error.message} - Status: ${error.status}`
+      <br>
+      a.button-primary-small(href='/') Go Home
+      img.desk-items(src='static/img/desk.svg')

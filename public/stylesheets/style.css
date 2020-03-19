@@ -292,6 +292,10 @@ input {
 
 /* 404 Error */
 
+.error {
+  text-align: center;
+}
+
 .desk {
   width: 80%;
   color: #727C85;

@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 //sets up cookie Parser to user cookies
 app.use(cookieParser());
 //serve static files
-app.use(express.static('public'))
+app.use('/static', express.static('public'));
 
 //imports router middleware from file
 //since it's index.js, it's automatically chosen to imoprt out of file

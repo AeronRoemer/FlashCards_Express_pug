@@ -1,3 +1,8 @@
 extends layout.pug
 block content
-    section#content
+  section#content
+    h1=text
+    if hint
+      p
+        i Hint: #{hint}
+    a(href=`${id}?side=${sideToShow}`)= sideToShowDisplay
